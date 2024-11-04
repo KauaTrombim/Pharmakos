@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Solicitação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <nav class="menu">
+        <a class="icone_seta" href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </nav>
+    <main class="conteudo">
+        <h1 class="titulo_pagina">Configuração de Medicamentos</h1>
+        <form class="formulario" action="http://192.168.147.1/enviar-formulario" method="post" id="formulario">
+            <div class="slot" id="input_med_1">
+                <label id="label_med_1" for="nome_med">Nome do medicamento:</label>
+                <input type="text" id="nome_med" name="nome_med" placeholder="Nome do medicamento" required>
+                <br>
+                <div id="input_doses_1">
+                    <label for="doses_med">Dose:</label>
+                    <input min=0 type="number" id="doses_med" name="doses_med" placeholder="Quantidade de doses" required>
+                    <br>
+                </div>
+            </div>
+            <div id="botoes">
+                <button type="button" id="botaoAdd">Adicionar medicamento</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/147b3b05e1.js" crossorigin="anonymous"></script>
+</html>
