@@ -1,0 +1,114 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Degradê de azul */
+    height: 100vh; /* Faz com que o corpo ocupe a altura total da janela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Estilo para o cabeçalho da página (nav) */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Barra preta */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilizando o ícone da seta */
+.icone_seta {
+    align-self: flex-start;
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+/* O conteúdo principal da página */
+main {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Título da página */
+.titulo_pagina {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilo do formulário */
+.formulario {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Labels e inputs */
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #8f94fb; /* Cor de foco */
+    box-shadow: 0 0 5px rgba(143, 148, 251, 0.5);
+}
+
+/* Botões */
+button {
+    background-color: #8f94fb; /* Cor de fundo dos botões */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4e54c8; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilizando os botões juntos */
+#botoes {
+    display: flex;
+    justify-content: center;
+}
+
+#botoes button {
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
