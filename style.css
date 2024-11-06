@@ -1,4 +1,9 @@
 /* Resetando estilos padrão */
+:root{
+    --cor-escura-primaria: #001447;
+    --cor-de-fundo: #F5F4F5;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +13,13 @@
 /* Estilos gerais */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Degradê de azul */
+    background: var(--cor-de-fundo); /* Degradê de azul */
     height: 100vh; /* Faz com que o corpo ocupe a altura total da janela */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--cor-escura-primaria);
 }
 
 /* Estilo para o cabeçalho da página (nav) */
@@ -23,10 +28,15 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000; /* Barra preta */
+    background-color: var(--cor-escura-primaria);
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around
+}
+
+a{
+    color: var(--cor-de-fundo);
+    text-decoration:none;
 }
 
 /* Estilizando o ícone da seta */
@@ -48,7 +58,7 @@ main {
 .titulo_pagina {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: var(--cor-escura-primaria);
     font-weight: bold;
 }
 
