@@ -3,6 +3,8 @@ var botoes = document.getElementById('botoes');
 var botaoAdd = document.getElementById('botaoAdd');
 var doses = document.getElementById('doses_med');
 var campoDoses = document.getElementById('input_doses_1');
+var quantidade = document.getElementById('qtd_med');
+var enderecoIP = document.getElementById('ip_pharmakos');
 var slots = 1;
 
 // Função para adicionar medicamentos
@@ -89,4 +91,7 @@ function inserirDoses(){
     }
 }
 
-
+function cadastrarIP(){
+    let linkSubmit = "http://" + enderecoIP.value + "/enviar-formulario"
+    formulario.setAttribute("action", linkSubmit);
+}
