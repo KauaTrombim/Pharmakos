@@ -26,7 +26,10 @@ botaoAdd.addEventListener("click",()=>{
 })
 
 // Função para adicionar horarios
-doses.addEventListener('blur', ()=>{
+//doses.addEventListener('blur', ()=>{
+//})
+
+function inserirDoses(){
     let dosesDiarias = parseInt(doses.value)
     //console.log("Doses: "+dosesDiarias)
     let horarios = document.getElementsByClassName('horario_dose').length;
@@ -84,5 +87,6 @@ doses.addEventListener('blur', ()=>{
             campoDoses.insertBefore(newDateLabel,newDate);
         }
     }
-}) 
+}
+
 

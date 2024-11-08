@@ -20,9 +20,11 @@
                 <label id="label_med_1" for="nome_med">Nome do medicamento:</label>
                 <input type="text" id="nome_med" name="nome_med" placeholder="Nome do medicamento" required>
                 <br>
+                <label id="label_qtd_1" for="qtd_med">Quantidade do medicamento</label>
+                <input type="text" id="qtd_med" name="qtd_med" placeholder="Quantidade por dose" required>
                 <div id="input_doses_1">
                     <label for="doses_med">Dose:</label>
-                    <input min=0 type="number" id="doses_med" name="doses_med" placeholder="Quantidade de doses" required>
+                    <input min=0 type="number" id="doses_med" name="doses_med" placeholder="Quantidade de doses" onkeyup="inserirDoses()" required>
                     <br>
                 </div>
             </div>
